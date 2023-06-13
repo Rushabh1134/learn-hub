@@ -1,5 +1,5 @@
 import api from "@/appwrite/appwrite";
-import { UserInterface } from "@/interfaces/user.interface";
+import { UserInterface } from "@/app/interface/user.interface";
 import { Permission, Query, Role } from "appwrite";
 import { userId } from "../storage";
 
