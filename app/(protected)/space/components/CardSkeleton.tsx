@@ -1,7 +1,7 @@
 import { Skeleton } from "@/components/ui/skeleton";
 import React from "react";
 
-const CampaignCardSkeleton = () => {
+const CardSkeleton = () => {
   return (
     <Skeleton className="w-[240px] h-[260px] rounded-lg p-4">
       <Skeleton className="h-[160px] bg-secondary/10" />
@@ -15,4 +15,4 @@ const CampaignCardSkeleton = () => {
   );
 };
 
-export default CampaignCardSkeleton;
+export default CardSkeleton;

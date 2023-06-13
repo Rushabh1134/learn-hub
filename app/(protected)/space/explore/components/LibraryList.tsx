@@ -6,7 +6,7 @@ import Image from "next/image"
 import { getAllCourcesList } from "@/lib/services/library.service"
 import { CourceInterface } from "@/app/interface/cource.interface"
 
-import CampaignCardSkeleton from "../../components/CardSkeleton"
+import CardSkeleton from "../../components/CardSkeleton"
 
 const LibraryList = () => {
   const [library, setLibrary] = useState<CourceInterface[]>([])
@@ -25,14 +25,14 @@ const LibraryList = () => {
     <div className="campaigns-list flex-wrap py-8 flex items-center justify-start gap-3">
       {loading && (
         <>
-          <CampaignCardSkeleton />
-          <CampaignCardSkeleton />
-          <CampaignCardSkeleton />
-          <CampaignCardSkeleton />
-          <CampaignCardSkeleton />
-          <CampaignCardSkeleton />
-          <CampaignCardSkeleton />
-          <CampaignCardSkeleton />
+          <CardSkeleton />
+          <CardSkeleton />
+          <CardSkeleton />
+          <CardSkeleton />
+          <CardSkeleton />
+          <CardSkeleton />
+          <CardSkeleton />
+          <CardSkeleton />
         </>
       )}
       {library.map((lib: any, i: number) => (

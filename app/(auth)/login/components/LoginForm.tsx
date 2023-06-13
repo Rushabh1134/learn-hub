@@ -7,7 +7,7 @@ import { useToast } from "@/components/ui/use-toast";
 import { LoginInterface } from "@/app/interface/auth.interface";
 import { login } from "@/lib/services/auth.service";
 import { Toast } from "@radix-ui/react-toast";
-import { FileWarning, LoaderIcon } from "lucide-react";
+import { LoaderIcon } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
@@ -78,7 +78,7 @@ const LoginForm = () => {
       </div>
       <Button disabled={loading} className="w-full text-sm">
         {" "}
-        {loading && <LoaderIcon className="animate-spin mr-3" size={20} />}{" "}
+        {loading && <LoaderIcon className="animate-spin mr-3" size={20} />}
         Login
       </Button>
       <p className="text-sm mt-6">

@@ -1,5 +1,5 @@
 "use client";
-import CampaignCardSkeleton from "@/app/(protected)/space/campaigns/components/CampaignCardSkeleton";
+import CardSkeleton from "@/app/(protected)/space/campaigns/components/CardSkeleton";
 import { updateCampaignDocument } from "@/lib/services/campaign.service";
 import { getAllCourcesList } from "@/lib/services/library.service";
 import { createPopup, updatePopupDocument } from "@/lib/services/popup.service";
@@ -168,14 +168,14 @@ const LibraryModal: React.FC<Props> = (props) => {
           >
             {loading && (
               <div className="flex items-center gap-4 flex-wrap">
-                <CampaignCardSkeleton />
-                <CampaignCardSkeleton />
-                <CampaignCardSkeleton />
-                <CampaignCardSkeleton />
-                <CampaignCardSkeleton />
-                <CampaignCardSkeleton />
-                <CampaignCardSkeleton />
-                <CampaignCardSkeleton />
+                <CardSkeleton />
+                <CardSkeleton />
+                <CardSkeleton />
+                <CardSkeleton />
+                <CardSkeleton />
+                <CardSkeleton />
+                <CardSkeleton />
+                <CardSkeleton />
               </div>
             )}
             <div className="flex items-center gap-3 flex-wrap">
