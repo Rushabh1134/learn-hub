@@ -1,14 +1,14 @@
 import Link from "next/link"
 
 import { siteConfig } from "@/config/site"
-import { buttonVariants } from "@/components/ui/button"
+import { Button, buttonVariants } from "@/components/ui/button"
 import { Icons } from "@/components/icons"
 import { MainNav } from "@/components/main-nav"
 import { ThemeToggle } from "@/components/theme-toggle"
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-40 w-full border-b bg-background">
+    <header className="sticky w-full top-0 bg-foreground/5 z-40 backdrop-blur-md py-2 flex items-center justify-between px-[5%]">
       <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
         <MainNav items={siteConfig.mainNav} />
         <div className="flex flex-1 items-center justify-end space-x-4">
@@ -44,6 +44,16 @@ export function SiteHeader() {
               </div>
             </Link>
             <ThemeToggle />
+            <div className="max-sm:hidden pl-5"></div>
+            <Link href={"/login"}>
+            <Button variant="secondary" className="max-sm:hidden">
+              Login
+            </Button>
+            </Link>
+            <div className="max-sm:hidden pl-5"></div>
+            <Link href={"/signup"}>
+            <Button className="max-sm:hidden">Get Started</Button>
+            </Link>
           </nav>
         </div>
       </div>
